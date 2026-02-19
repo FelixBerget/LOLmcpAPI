@@ -15,7 +15,7 @@ Do it in a pdf format of
 - Stats and names of players
 - Timeline of game
 - Main takeaways
-- Match ID and credit to Riot API and Claude
+- Match ID and credit to Riot API and Claude also says that it is not Riot official and therefore does not represent the company
 
 
 CRITICAL PDF RULES:
