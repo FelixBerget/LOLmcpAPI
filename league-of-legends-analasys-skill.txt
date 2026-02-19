@@ -1,8 +1,25 @@
-Analyze league of legends game and generate match reports
----------------------------------------------------------
+---
+name: league-of-legends-analyzer
+description: Analyze a league of legends game and generate match reports
+---
 
-Analyze league of legends game and generate match reportsAnalyse league of legends games either in static or timeline fashion.  Use when asked to analyse League of Legends gamesIf a player in the game is noted as the main target for analasys, analyze the game around said player. If not make it a general analasys.
+Analyze league of legends games either in static or timeline fashion.  Use when asked to analyse League of Legends games of a player in the game is noted as the main target for analasys, analyze the game around said player. If not make it a general analasys.
 Think about how items and levels interact with kills and CS if it is in the stats.
 Also think about matchups and how those might have affected the game.
 Always mention all players in the game by their in-game usernames when referencing their performance, actions, or stats.
 Try to make reports that have some graphics so they are pretty to look at
+
+Do it in a pdf format of 
+- Title called Match Report
+- Basic info such as win, length of game and player name if general match report ignore the player name part
+- Stats and names of players
+- Timeline of game
+- Main takeaways
+- Match ID and credit to Riot API and Claude
+
+
+CRITICAL PDF RULES:
+- The VERY FIRST element appended to the story list MUST be the title. No text, spacers, or any other elements should come before it.
+- Do NOT add any introductory text, metadata comments, or debug strings before the title Paragraph.
+- The story list must begin exactly with: story.append(Paragraph("MATCH REPORT", title_style))
+- Double-check the generated Python script — if anything appears before that line, delete it.
