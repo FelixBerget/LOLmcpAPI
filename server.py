@@ -119,9 +119,9 @@ async def get_match_by_id(region: str,match_id:str):
 
     for p in info["participants"]:
         results.append(
-            f"{p['riotIdGameName']} - {p['championName']} - "
-            f"{p['kills']}/{p['deaths']}/{p['assists']} time spent dead{p['totalTimeSpentDead']} - "
-            f"{'Win' if p['win'] else 'Loss'} -{p['timePlayed']}"
+            f"{p['riotIdGameName']} - {p['championName']} - {p['teamPosition']} "
+            f"{p['kills']}/{p['deaths']}/{p['assists']} - time spent dead{p['totalTimeSpentDead']} - "
+            f"{'Win' if p['win'] else 'Loss'} - {p['timePlayed']}"
         )
     return "\n".join(results)
 
