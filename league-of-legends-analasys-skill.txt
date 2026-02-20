@@ -7,19 +7,12 @@ Analysis league of legends games either in static or timeline fashion.  Use when
 Think about how items and levels interact with kills and CS if it is in the stats.
 Also think about matchups and how those might have affected the game.
 Always mention all players in the game by their in-game usernames when referencing their performance, actions, or stats.
-Try to make reports that have some professional looking graphics
+Try to make reports that have some professional looking graphics also keep in mind contrast with text and background
 
-Do it in a pdf format of 
+Do it in a HTML format of 
 - Title called Match Report
 - Basic info such as win, length of game and player name if general match report ignore the player name part
 - Stats and names of players
 - Timeline of game
 - Main takeaways
 - Match ID and credit to Riot API and Claude also says that it is not Riot official and therefore does not represent the company
-
-
-CRITICAL PDF RULES:
-- The VERY FIRST element appended to the story list MUST be the title. No text, spacers, or any other elements should come before it.
-- Do NOT add any introductory text, metadata comments, or debug strings before the title Paragraph.
-- The story list must begin exactly with: story.append(Paragraph("MATCH REPORT", title_style))
-- Double-check the generated Python script — if anything appears before that line, delete it.
