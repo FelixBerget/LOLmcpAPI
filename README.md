@@ -9,3 +9,4 @@ The skill file is here and should be plug and play just upload it to your Claude
 ## MCP
 The MCP files aka the python related files are of course server.py which is the MCP, but also the dependency and version controls.
 This can be put in its own folder and then connected via the config. This will give access to a skill called "riot" it should be here (C:\Users\"User"\AppData\Roaming\Claude) on windows and (~/Library/Application Support/Claude/claude_desktop_config.json) on mac
+You can also edit it by clicking edit config in settings-developer
